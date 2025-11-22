@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Invermay Vet Clinic</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Invermay Vet Clinic — Sample site">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1><a href="/">Invermay Vet Clinic</a></h1>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>Welcome</h2>
+      <p>Simple static site deployed with GitHub Pages. Edit this content in VS Code and push to GitHub.</p>
+      <p><a class="cta" href="#contact">Get in touch</a></p>
+    </section>
+
+    <section id="services">
+      <h3>Our Services</h3>
+      <ul>
+        <li>General veterinary care</li>
+        <li>Vaccinations & microchipping</li>
+        <li>Emergency care</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: info@invermayvetclinic.com.au</p>
+      <p>Phone: (replace with your clinic phone)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>&copy; <span id="year"></span> Invermay Vet Clinic</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# node (if you later add build tooling)
+node_modules/
+dist/
+build/
