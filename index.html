@@ -1,54 +1,282 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Invermay Vet Clinic</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Invermay Vet Clinic — Sample site">
-</head>
-<body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1><a href="/">Invermay Vet Clinic</a></h1>
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Invermay Vet Clinic — Veterinary Care in Tasmania</title>
+    <meta
+      name="description"
+      content="Invermay Vet Clinic — Personalised veterinary care in Launceston, Tasmania. We offer consultations, surgery, dentistry, and emergency care for dogs and cats."
+    />
+    <meta name="theme-color" content="#00528e" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Invermay Vet Clinic — Invermay, Tasmania" />
+    <meta
+      property="og:description"
+      content="Personalised, compassionate veterinary care in Launceston, Tasmania. We offer consultations, surgery, dentistry and emergency care for dogs and cats."
+    />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo.png" />
+
+    <!-- Structured data (replace placeholders) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VeterinaryCare",
+        "name": "Invermay Vet Clinic",
+        "image": "/images/logo.png",
+        "telephone": "+61 (03) 6331 1744",
+        "email": "admin@invermayvetclinic.com.au",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "66 Invermay Rd",
+          "addressLocality": "Invermay",
+          "addressRegion": "TAS",
+          "postalCode": "7248",
+          "addressCountry": "AU"
+        },
+        "url": "https://www.invermayvetclinic.com.au",
+        "openingHours": ["Mo-Fr 08:30-17:00"],
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+
+  <body>
+<!-- header: topbar (fixed) + site-header wrapper -->
+<header class="site-header" role="banner">
+  <div class="topbar">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Invermay Vet Clinic logo" class="logo" />
+        <img src="images/logo-name.png" alt="Invermay Vet Clinic" class="logo" />
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+
+        <ul id="nav-list" class="nav-list">
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="team.html">TEAM</a></li>
+          <li><a href="index.html#services">SERVICES</a></li>
+          <li><a href="pricing.html">PRICING</a></li>
+          <li><a href="index.html#contact-us">CONTACT</a></li>
+        </ul>
       </nav>
+
+      <div class="header-cta">
+        <!-- <a class="btn btn-primary" href="#contact">BOOK ONLINE</a> -->
+      </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="wrap">
-    <section class="hero">
-      <h2>Welcome</h2>
-      <p>Simple static site deployed with GitHub Pages. Edit this content in VS Code and push to GitHub.</p>
-      <p><a class="cta" href="#contact">Get in touch</a></p>
-    </section>
+<!-- announcement banner: place immediately after the header/topbar and before the hero -->
+<div class="announcement-banner" role="region" aria-label="Clinic announcement" data-announcement-id="opening-2026">
+  <div class="container announcement-inner">
+    <p class="announcement-text">
+      <strong>OPENING SOON!</strong>
+      Invermay Vet Clinic opens on 2 February 2026.
+    </p>
+    <button class="announce-close" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</div>
 
-    <section id="services">
-      <h3>Our Services</h3>
+<!-- hero moved OUTSIDE the fixed topbar so it scrolls normally -->
+<div class="hero" role="region" aria-label="Hero">
+  <div class="container">
+  <div class="hero-left">
+    <p><h3>Invermay Vet Clinic is a small, privately-owned practice with a highly skilled, friendly team. Our services include general consultations, vaccinations, work-ups and treatment of medical cases, dentistry, and surgery - both soft tissue and orthopaedic.</h3></p>
+    <p><h3>We open on 2 February 2026. Call or email to book an appointment - we look forward to meeting you!</h3></p>
+
+    <div class="hero-actions">
+      <!-- <a class="btn btn-primary" href="#contact">BOOK ONLINE</a> -->
+<!-- <li><a href="#services">SERVICES</a></li> -->
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="contact-card">
+      <h3>Clinic hours</h3>
       <ul>
-        <li>General veterinary care</li>
-        <li>Vaccinations & microchipping</li>
-        <li>Emergency care</li>
+        <li>Mon–Fri: 8:30 AM – 5:00 PM</li>
+        <li>Sat/Sun: Closed</li>
       </ul>
-    </section>
+      <p><strong>Address:</strong><br/>66 Invermay Rd, Invermay, TAS 7248</p>
+      <p><strong>Email: </strong><a href="mailto:admin@invermayvetclinic.com.au">admin@invermayvetclinic.com.au</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+61363311744">(03) 6331 1744</a></p>
+    </div>
+  </div>
+  </div>
+</div>
 
-    <section id="contact">
-      <h3>Contact</h3>
-      <p>Email: info@invermayvetclinic.com.au</p>
-      <p>Phone: (replace with your clinic phone)</p>
-    </section>
-  </main>
+    <main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>&copy; <span id="year"></span> Invermay Vet Clinic</small>
+            <!-- Add this where you want the carousel to appear (inside a .container if you want it constrained) -->
+      <div class="carousel" role="region" aria-label="Clinic gallery" data-autoplay="true" data-interval="5000">
+        <div class="carousel-viewport">
+          <ul class="carousel-track">
+            <li class="carousel-slide" data-index="0">
+              <img src="images/carousel-1/artemis-1.jpg" alt="Kitten waving" loading="lazy" />
+            </li>
+            <li class="carousel-slide" data-index="1">
+              <img src="images/carousel-1/max-2.png" alt="Cat on a sewing pattern" loading="lazy" />
+            </li>
+            <li class="carousel-slide" data-index="2">
+              <img src="images/carousel-1/darren-jas.JPG" alt="Darren and child with kitten" loading="lazy" />
+            </li>
+            <li class="carousel-slide" data-index="3">
+              <img src="images/carousel-1/max-2.jpg" alt="Cat and puzzle" loading="lazy" />
+            </li>
+            <li class="carousel-slide" data-index="4">
+              <img src="images/carousel-1/apollo-1.jpg" alt="Dog in a field" loading="lazy" />
+            </li>
+            <li class="carousel-slide" data-index="5">
+              <img src="images/carousel-1/sunshine-1.jpg" alt="Cat sleeping" loading="lazy" />
+            </li>
+            <li class="carousel-slide" data-index="6">
+              <img src="images/carousel-1/max-3.png" alt="Cat on a sewing pattern" loading="lazy" />
+            </li>
+            <!-- add/remove slides as needed; keep data-index in sequence -->
+          </ul>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control prev" aria-label="Previous slide">&lsaquo;</button>
+        <button class="carousel-control next" aria-label="Next slide">&rsaquo;</button>
+
+        <!-- Dots / indicators -->
+        <div class="carousel-indicators" role="tablist" aria-label="Slide indicators"></div>
+      </div>
+
+      <section id="services" class="container services">
+        <h2>Our Services</h2>
+        <p class="section-intro">
+          From routine vaccinations to surgical procedures and dental care, our
+          team provides comprehensive services for dogs and cats. See our <a href="pricing.html">pricing guide</a> for details on fixed fee items.
+        </p>
+
+        <div class="service-grid">
+          <article class="service">
+            <h3>Veterinary consultations</h3>
+            <p>
+              Vaccination, check-ups, medical work-ups, microchipping and registration, and treatment plans.
+            </p>
+          </article>
+
+          <article class="service">
+            <h3>Soft tissue surgery</h3>
+            <p>
+              Soft tissue surgery, including desexing, growth removals, foreign body removal, explorative laporotomy, some eye surgery, and <a href="https://www.veterinarypractitioner.com.au/boas-surgery/">BOAS procedures</a> (surgery to improve breathing in brachycephalic breeds).
+            </p>
+          </article>
+          <article class="service">
+            <h3>Orthopaedic surgery</h3>
+            <p>
+              Orthopaedic procedures for fracture repair, luxating patellas, and cruciate disease (ACL), including DeAngelis for smaller dogs and <a href="https://www.youtube.com/watch?v=VsCq353sy14">TPLOs for dogs larger than 10kg</a> are available at the clinic. Darren is highly experienced and passionate about orthopaedics.
+            </p>
+          </article>
+
+          <article class="service">
+            <h3>Nursing consultations</h3>
+            <p>
+              Our certified nurses can see your pet for check-ups, suture removals, bandaging, blood tests, and pregnancy ultrasounds. Our nurses can also administer some treatments, such as Beransa and Cartophen injections.
+            </p>
+          </article>
+
+          <article class="service">
+            <h3>Emergencies</h3>
+            <p>
+              We do our best to accommodate emergencies during open hours, but we
+              do not provide 24/7 emergency care. For urgent help, please contact
+              <a href="https://www.vetchat.com.au/">VetChat</a>, <a href="https://animalemergencyservice.com.au/aes_location/animal-emergency-service-hobart/">Animal Emergency Service</a>, Hobart, or the <a href="https://www.aehl.com.au/">Animal Emergency Service</a> in Launceston (weekends and public holidays only).
+            </p>
+          </article>
+
+          <article class="service">
+            <h3>Dentistry</h3>
+            <p>Dental assessment, scale and polish, and extractions.</p>
+          </article>
+
+          <article class="service">
+            <h3>Diagnostics & imaging</h3>
+            <p>On-site blood testing, x-rays, and ultrasound for fast diagnoses.</p>
+          </article>
+
+          <article class="service">
+            <h3>Exclusions</h3>
+            <p>
+              We treat dogs and cats only. For other species or wildlife, please
+              contact appropriate facilities.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact-us" class="container contact-us">
+        <h2>Contact us</h2>
+        <p class="section-intro">
+          Ready to book an appointment or have questions? Reach out to our friendly team!
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Phone</h3>
+            <p>
+              Call us at
+              <a href="tel:+61363311744">(03) 6331 1744</a>
+              during clinic hours.
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p>
+              Email us at
+              <a href="mailto:admin@invermayvetclinic.com.au">admin@invermayvetclinic.com.au</a>
+            </p>
+          </div>
+
+          <div class="contact-item">
+            <h3>Address</h3>
+            <p>66 Invermay Rd, Invermay, TAS 7248</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.77048220927!2d147.13295457684993!3d-41.4201316712957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaa70a70f446e5865%3A0xbb309161f9429d32!2s66%20Invermay%20Rd%2C%20Invermay%20TAS%207248!5e1!3m2!1sen!2sau!4v1767513560313!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <img src="images/IVC-logo-long.png" alt="Invermay Vet Clinic logo" class="footer-logo" />
+        <p>Invermay Vet Clinic — caring for your pets in Launceston, Tasmania.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>66 Invermay Rd, Invermay, TAS 7248<br/>
+        Phone: <a href="tel:+61363311744">(03) 6331 1744</a><br/>
+        Email: <a href="mailto:admin@invermayvetclinic.com.au">admin@invermayvetclinic.com.au</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Opening hours</h4>
+        <p>Mon–Fri: 8:30 AM – 5:00 PM</br>
+        Sat: Closed</br>
+        Sun: Closed</p>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <small>&copy; <span id="year"></span> Invermay Vet Clinic — All rights reserved.</small>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Invermay Vet Clinic — Veterinary Care in Tasmania</title>
+    <meta
+      name="description"
+      content="Invermay Vet Clinic — Personalised veterinary care in Launceston, Tasmania. We offer consultations, surgery, dentistry, and emergency care for dogs and cats."
+    />
+    <meta name="theme-color" content="#00528e" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Invermay Vet Clinic — Invermay, Tasmania" />
+    <meta
+      property="og:description"
+      content="Personalised, compassionate veterinary care in Launceston, Tasmania. We offer consultations, surgery, dentistry and emergency care for dogs and cats."
+    />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo.png" />
+
+    <!-- Structured data (replace placeholders) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VeterinaryCare",
+        "name": "Invermay Vet Clinic",
+        "image": "/images/logo.png",
+        "telephone": "+61 (03) 6331 1744",
+        "email": "admin@invermayvetclinic.com.au",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "66 Invermay Rd",
+          "addressLocality": "Invermay",
+          "addressRegion": "TAS",
+          "postalCode": "7248",
+          "addressCountry": "AU"
+        },
+        "url": "https://www.invermayvetclinic.com.au",
+        "openingHours": ["Mo-Fr 08:30-17:00"],
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+
+  <body>
+<!-- header: topbar (fixed) + site-header wrapper -->
+<header class="site-header" role="banner">
+  <div class="topbar">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Invermay Vet Clinic logo" class="logo" />
+        <img src="images/logo-name.png" alt="Invermay Vet Clinic" class="logo" />
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+
+        <ul id="nav-list" class="nav-list">
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="team.html">TEAM</a></li>
+          <li><a href="index.html#services">SERVICES</a></li>
+          <li><a href="pricing.html">PRICING</a></li>
+          <li><a href="index.html#contact-us">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <!-- <a class="btn btn-primary" href="#contact">BOOK ONLINE</a> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- announcement banner: place immediately after the header/topbar and before the hero -->
+<div class="announcement-banner" role="region" aria-label="Clinic announcement" data-announcement-id="opening-2026">
+  <div class="container announcement-inner">
+    <p class="announcement-text">
+      <strong>OPENING SOON!</strong>
+      Invermay Vet Clinic opens on 2 February 2026.
+    </p>
+    <button class="announce-close" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</div>
+
+  <!-- hero moved OUTSIDE the fixed topbar so it scrolls normally -->
+<div class="hero" role="region" aria-label="Hero">
+  <div class="container">
+  <div class="hero-left">
+      <h1>Pricing guide</h1>
+      <p class="lead">Invermay Vet Clinic charges fixed fees for standard procedures and services where possible. The prices provided below are typical prices in AUD and can be used to help plan care for your pets.</p>
+      <p>In some cases, there are complications that result in additional fees. For example, desexing an animal in heat or that is obese may attract a surcharge.</p>
+      <p>Estimates will be provided at consultation. Where possible, we will provide a written estimate for surgical procedures before treatment commences.</p>
+
+<div class="hero-actions">
+      <!-- <p><a class="btn btn-primary" href="index.html#contact">Request an estimate</a> <a class="btn btn-outline" href="#notes">Important notes</a></p> -->
+<!-- <li><a href="#services">SERVICES</a></li> -->
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="contact-card">
+        <h3>Quick contact</h3>
+        <p><strong>Phone:</strong> <a href="tel:+61363311744">(03) 6331 1744</a></p>
+        <p><strong>Address:</strong><br/>66 Invermay Rd, Invermay, TAS 7248</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <div class="carousel" role="region" aria-label="Clinic gallery" data-autoplay="true" data-interval="5000">
+    <div class="carousel-viewport">
+      <ul class="carousel-track">
+        <li class="carousel-slide" data-index="0">
+          <img src="images/carousel-4/xray-1.jpg" alt="Kids in the clinic cages" loading="lazy" />
+        </li>
+        <li class="carousel-slide" data-index="1">
+          <img src="images/carousel-4/xray-10.jpg" alt="Lucky and Sunshine the cats" loading="lazy" />
+        </li>
+        <li class="carousel-slide" data-index="2">
+          <img src="images/carousel-4/xray-11.jpg" alt="Dogs on a hike in South Africa" loading="lazy" />
+        </li>
+        <li class="carousel-slide" data-index="3">
+          <img src="images/carousel-4/xray-2.jpg" alt="Kids on donkies" loading="lazy" />
+        </li>
+        <li class="carousel-slide" data-index="4">
+          <img src="images/carousel-4/xray-3.jpg" alt="Sushi the kitten" loading="lazy" />
+        </li>
+        <!-- add/remove slides as needed; keep data-index in sequence -->
+      </ul>
+    </div>
+
+        <!-- Controls -->
+        <button class="carousel-control prev" aria-label="Previous slide">&lsaquo;</button>
+        <button class="carousel-control next" aria-label="Next slide">&rsaquo;</button>
+
+        <!-- Dots / indicators -->
+        <div class="carousel-indicators" role="tablist" aria-label="Slide indicators"></div>
+      </div>
+
+  <main class="container main-content" id="main">
+    <!-- pricing controls / filters -->
+    <section class="pricing-overview" aria-labelledby="pricing-intro">
+      <h2 id="pricing-intro">Price guide</h2>
+      <p class="section-intro">Prices for surgical procedures include all necessary anaesthesia, monitoring, and post-operative care.</p>
+    </section>
+<div class="pricing-table-wrap">
+  <table class="pricing-table" aria-describedby="pricing-intro">
+  <caption class="visually-hidden">Invermay Vet Clinic price guide</caption>
+
+  <!-- column widths: service | price -->
+  <colgroup>
+    <col style="width:72%;">
+    <col style="width:28%;">
+  </colgroup>
+
+  <!-- Proper table head -->
+  <thead>
+    <tr>
+      <th scope="col">Service</th>
+      <th scope="col" style="color: white;">Typical price</th>
+    </tr>
+  </thead>
+
+  <!-- Group: Consultations -->
+  <tbody class="pricing-group" data-group="consultations" data-open="true">
+    <tr class="group-header">
+      <th colspan="2">
+        <button class="group-toggle" aria-expanded="true" aria-controls="group-consultations">
+          Consultations
+          <span class="visually-hidden">— toggle visibility of items</span>
+        </button>
+      </th>
+    </tr>
+
+    <tr id="group-consultations">
+      <td>Consultation — routine</td>
+      <td class="price">$90</td>
+    </tr>
+
+    <tr>
+      <td>Consultation — follow-up</td>
+      <td class="price">$70</td>
+    </tr>
+
+    <tr>
+      <td>Consultation — meds review</td>
+      <td class="price">$80</td>
+    </tr>
+  </tbody>
+
+  <!-- Group: Vaccinations -->
+  <tbody class="pricing-group" data-group="vaccination" data-open="false">
+    <tr class="group-header">
+      <th colspan="2">
+        <button class="group-toggle" aria-expanded="false" aria-controls="group-vaccination">
+          Vaccination and microchips
+          <span class="visually-hidden">— toggle visibility of items</span>
+        </button>
+      </th>
+    </tr>
+
+    <tr id="group-vaccination">
+      <td>Single pet vaccination</td>
+      <td class="price">$110</td>
+    </tr>
+
+    <tr>
+      <td>Additional pet vaccination</td>
+      <td class="price">$90</td>
+    </tr>
+
+    <tr>
+      <td>Microchip implant and register</td>
+      <td class="price">$65</td>
+    </tr>
+  </tbody>
+
+    <!-- Group: Male dog desexing -->
+  <tbody class="pricing-group" data-group="male-dog-desexing" data-open="true">
+    <tr class="group-header">
+      <th colspan="2">
+        <button class="group-toggle" aria-expanded="true" aria-controls="group-male-dog-desexing">
+          Dog desexing (male)
+          <span class="visually-hidden">— toggle visibility of items</span>
+        </button>
+      </th>
+    </tr>
+
+    <tr id="group-male-dog-desexing">
+      <td>Castration - Small dog (&lt; 10kg)</td>
+      <td class="price">$300</td>
+    </tr>
+
+    <tr id="group-male-dog-desexing">
+      <td>Castration - Medium dog (10-25kg)</td>
+      <td class="price">$350</td>
+    </tr>  
+
+    <tr id="group-male-dog-desexing">
+      <td>Castration - Large dog (25-50kg)</td>
+      <td class="price">$400</td> 
+    </tr> 
+
+    <tr id="group-male-dog-desexing">
+      <td>Castration - XL dog (&gt; 50kg)</td>
+      <td class="price">$450</td> 
+    </tr>
+
+<!-- Group: Female dog desexing -->
+  <tbody class="pricing-group" data-group="female-dog-desexing" data-open="true">
+    <tr class="group-header">
+      <th colspan="2">
+        <button class="group-toggle" aria-expanded="true" aria-controls="group-female-dog-desexing">
+          Dog desexing (female)
+          <span class="visually-hidden">— toggle visibility of items</span>
+        </button>
+      </th>
+    </tr>
+
+    <tr>
+      <td>Spay - Small dog (&lt; 10kg)</td>
+      <td class="price">$400</td> 
+    </tr>
+    <tr>
+      <td>Spay - Medium dog (10-25kg)</td>
+      <td class="price">$450</td> 
+    </tr>
+        <tr>
+      <td>Spay - Large dog (25-50kg)</td>
+      <td class="price">$600</td> 
+    </tr>
+        <tr>
+      <td>Spay - XL dog (&gt; 50kg)</td>
+      <td class="price">$750</td> 
+    </tr>
+  </tbody>
+
+    <!-- Group: Cat desexing -->
+  <tbody class="pricing-group" data-group="cat-desexing" data-open="true">
+    <tr class="group-header">
+      <th colspan="3">
+        <button class="group-toggle" aria-expanded="true" aria-controls="group-cat-desexing">
+          Cat desexing (male and female)
+          <span class="visually-hidden">— toggle visibility of items</span>
+        </button>
+      </th>
+    </tr>
+
+    <tr id="group-cat-desexing">
+      <td>Cat castration</td>
+      <td class="price">$300</td>
+    </tr>
+
+    <tr>
+      <td>Cat spay</td>
+      <td class="price">$400</td>
+    </tr>
+  </tbody>
+
+      <!-- Group: Dentistry -->
+  <tbody class="pricing-group" data-group="dentistry" data-open="true">
+    <tr class="group-header">
+      <th colspan="3">
+        <button class="group-toggle" aria-expanded="true" aria-controls="group-dentistry">
+          Dentistry (dogs and cats)
+          <span class="visually-hidden">— toggle visibility of items</span>
+        </button>
+      </th>
+    </tr>
+    <tr id="group-dentistry">
+      <td>Scale, polish, and extractions</td>
+      <td class="price">$600 - $2000</td>
+    </tr>
+  </tbody>
+
+    <!-- Group: Orthopaedic surgery -->
+  <tbody class="pricing-group" data-group="orthopaedic-surgery" data-open="true">
+    <tr class="group-header">
+      <th colspan="3">
+        <button class="group-toggle" aria-expanded="true" aria-controls="group-orthopaedic-surgery">
+          Orthopaedic surgery
+          <span class="visually-hidden">— toggle visibility of items</span>
+        </button>
+      </th>
+    </tr>
+
+    <tr id="group-orthopaedic-surgery">
+      <td>DeAngelis surgery for dogs &lt;10kg</td>
+      <td class="price">$1500</td>
+    </tr>
+    
+    <tr id="group-orthopaedic-surgery">
+      <td>Luxating patella</td>
+      <td class="price">$1600</td>
+    </tr>
+
+    <tr id="group-orthopaedic-surgery">
+      <td>TPLO</td>
+      <td class="price">$3800</td>
+    </tr>
+
+    <tr id="group-orthopaedic-surgery">
+      <td>Fracture repair</td>
+      <td class="price">$1500 - $6000</td>
+    </tr>
+
+  </tbody>
+
+
+</table>
+
+  </main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <img src="images/IVC-logo-long.png" alt="Invermay Vet Clinic logo" class="footer-logo" />
+        <p>Invermay Vet Clinic — caring for your pets in Launceston, Tasmania.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>66 Invermay Rd, Invermay, TAS 7248<br/>
+        Phone: <a href="tel:+61363311744">(03) 6331 1744</a><br/>
+        Email: <a href="mailto:admin@invermayvetclinic.com.au">admin@invermayvetclinic.com.au</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Opening hours</h4>
+        <p>Mon–Fri: 8:30 AM – 5:00 PM</p>
+        <p>Sat: Closed</p>
+        <p>Sun: Closed</p>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <small>&copy; <span id="year"></span> Invermay Vet Clinic — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,49 +1,36 @@
-# Static site starter
+# Invermay Vet Clinic — Website scaffold
 
-This repo is a minimal static website you can edit in VS Code and deploy with GitHub Pages.
+What this package contains:
+- index.html — main page
+- css/styles.css — styling
+- js/main.js — minimal interaction
+- robots.txt
+- sitemap.xml
 
-Quick steps (local -> GitHub -> GitHub Pages)
-1. Open a terminal in the project folder.
-2. Initialize git and commit:
-   - git init
-   - git add .
-   - git commit -m "Initial commit"
-3. Create a GitHub repository (replace <repo> and your username):
-   - git remote add origin https://github.com/<your-username>/<repo>.git
-   - git branch -M main
-   - git push -u origin main
+Images:
+- Place your supplied logo as `images/logo.png`. The pages reference `images/logo.png`.
+- Placeholder staff photos use external placeholder images; replace them with real photos in `images/staff/`.
 
-Or use the GitHub web UI to create a repo and push from VS Code.
+Replace these placeholders:
+- Clinic phone, address, email and website URLs in `index.html` and the JSON-LD block near the top.
+- Replace the Google Maps iframe `src` with your clinic's actual Google Maps embed link.
 
-Enable GitHub Pages
-1. In the GitHub repo go to Settings → Pages.
-2. Under "Source", choose `main` branch and `/ (root)` folder, then Save.
-3. In the "Custom domain" box, enter `invermayvetclinic.com.au` (or your domain) — GitHub will create and enable HTTPS once DNS is correct.
+Deployment:
+- To preview locally: open `index.html` in a browser.
+- For HTTPS hosting / production, place files on a web host or static-hosting service (Netlify, Vercel, GitHub Pages, or your host).
+- Configure real domain, SSL, analytics, and contact-form backend (e.g., Formspree, Netlify Forms, or a server endpoint).
 
-DNS (VentraIP) — what to add
-If VentraIP is your DNS host (nameservers point to VentraIP), add these records in VentraIP's DNS manager:
+Accessibility & SEO:
+- Image `alt` attributes are included.
+- Page contains basic Open Graph meta tags and JSON-LD schema for VeterinaryCare — update with real data.
+- Add page-level meta tags and canonical tags if needed.
 
-- A records for the apex (host = @ or leave blank) pointing to:
-  - 185.199.108.153
-  - 185.199.109.153
-  - 185.199.110.153
-  - 185.199.111.153
+Next steps I can help with:
+- Integrate an appointment booking service (e.g., Cliniko, EasyPractice) or create a backend form handler.
+- Create additional pages (Fees, Resources, Blog) and a WordPress or headless CMS setup.
+- Improve SEO content and add structured FAQ schema.
 
-- CNAME for `www`:
-  - Host: www
-  - Value: <your-github-username>.github.io   (for example: elizabethjkelly.github.io)
-
-Also include the `CNAME` file (already present) at the repo root with your custom domain.
-
-Notes & troubleshooting
-- If your nameservers are NOT VentraIP (for example Cloudflare or another host), update DNS at the provider shown in your domain's nameserver settings.
-- Wait a few minutes to a couple of hours for DNS propagation. Use `dig` or an online DNS checker.
-- After DNS updates and adding the custom domain in GitHub Pages, GitHub will provision HTTPS automatically. Enable "Enforce HTTPS" in Pages settings if available.
-- If you use Cloudflare, set the record to DNS-only (no proxy/grey-cloud) for GitHub Pages to work reliably.
-
-Commands to check DNS:
-- dig +short A invermayvetclinic.com.au
-- dig +short CNAME www.invermayvetclinic.com.au
-- dig +short TXT _github-challenge.invermayvetclinic.com.au (only if GitHub asks for a TXT for verification)
-
-That's it — edit index.html and styles.css in VS Code and commit/push to publish.
+If you'd like, I can:
+- Replace the placeholder contact info with the exact clinic details you provide.
+- Produce a version tailored for WordPress or a static-generator (Jekyll/Hugo).
+- Add booking integration and Google Analytics setup instructions.

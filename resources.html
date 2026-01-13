@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Invermay Vet Clinic — Veterinary Care in Tasmania</title>
+    <meta
+      name="description"
+      content="Invermay Vet Clinic — Personalised veterinary care in Launceston, Tasmania. We offer consultations, surgery, dentistry, and emergency care for dogs and cats."
+    />
+    <meta name="theme-color" content="#00528e" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Invermay Vet Clinic — Invermay, Tasmania" />
+    <meta
+      property="og:description"
+      content="Personalised, compassionate veterinary care in Launceston, Tasmania. We offer consultations, surgery, dentistry and emergency care for dogs and cats."
+    />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo.png" />
+
+    <!-- Structured data (replace placeholders) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VeterinaryCare",
+        "name": "Invermay Vet Clinic",
+        "image": "/images/logo.png",
+        "telephone": "+61 (03) 6331 1744",
+        "email": "admin@invermayvetclinic.com.au",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "66 Invermay Rd",
+          "addressLocality": "Invermay",
+          "addressRegion": "TAS",
+          "postalCode": "7248",
+          "addressCountry": "AU"
+        },
+        "url": "https://www.invermayvetclinic.com.au",
+        "openingHours": ["Mo-Fr 08:30-17:00"],
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+
+  <body>
+<!-- header: topbar (fixed) + site-header wrapper -->
+<header class="site-header" role="banner">
+  <div class="topbar">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Invermay Vet Clinic logo" class="logo" />
+        <img src="images/logo-name.png" alt="Invermay Vet Clinic" class="logo" />
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+
+        <ul id="nav-list" class="nav-list">
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="team.html">TEAM</a></li>
+          <li><a href="index.html#services">SERVICES</a></li>
+          <li><a href="pricing.html">PRICING</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="index.html#contact-us">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <!-- <a class="btn btn-primary" href="#contact">BOOK ONLINE</a> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- announcement banner: place immediately after the header/topbar and before the hero -->
+<div class="announcement-banner" role="region" aria-label="Clinic announcement" data-announcement-id="opening-2026">
+  <div class="container announcement-inner">
+    <p class="announcement-text">
+      <strong>OPENING SOON!</strong>
+      Invermay Vet Clinic opens on 2 February 2026.
+    </p>
+    <button class="announce-close" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</div>
+
+  <!-- hero moved OUTSIDE the fixed topbar so it scrolls normally -->
+<div class="hero" role="region" aria-label="Hero">
+  <div class="container">
+  <div class="hero-left">
+      <h1>About us</h1>
+      <p class="lead">Invermay Vet Clinic was started in 2026 by Dr Darren Taylor in Paul's Veterinary Clinic premises.</p>
+<div class="hero-actions">
+      <!-- <p><a class="btn btn-primary" href="index.html#contact">Request an estimate</a> <a class="btn btn-outline" href="#notes">Important notes</a></p> -->
+<!-- <li><a href="#services">SERVICES</a></li> -->
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="contact-card">
+        <h3>Quick contact</h3>
+        <p><strong>Phone:</strong> <a href="tel:+61363311744">(03) 6331 1744</a></p>
+        <p><strong>Address:</strong><br/>66 Invermay Rd, Invermay TAS 7248</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <img src="images/IVC-logo-long.png" alt="Invermay Vet Clinic logo" class="footer-logo" />
+        <p>Invermay Vet Clinic — caring for your pets in Launceston, Tasmania.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>66 Invermay Rd, Invermay, TAS 7248<br/>
+        Phone: <a href="tel:+61363311744">(03) 6331 1744</a><br/>
+        Email: <a href="mailto:admin@invermayvetclinic.com.au">admin@invermayvetclinic.com.au</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Opening hours</h4>
+        <p>Mon–Fri: 8:30 AM – 5:00 PM</p>
+        <p>Sat: Closed</p>
+        <p>Sun: Closed</p>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <small>&copy; <span id="year"></span> Invermay Vet Clinic — All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
