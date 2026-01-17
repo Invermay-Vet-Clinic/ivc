@@ -457,7 +457,7 @@ main section{padding:2rem 0; background:transparent}
    while still permitting horizontal scroll if min-width exceeds viewport */
 @media (max-width: 880px) {
   .pricing-table {
-    table-layout: auto;
+   display: table;
     min-width: 480px; /* allows tighter layout, but still scrolls if necessary */
   }
   .pricing-table th, .pricing-table td { padding: 0.6rem 0.6rem; font-size: 0.95rem; }
