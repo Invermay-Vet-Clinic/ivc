@@ -704,3 +704,55 @@ main section{padding:2rem 0; background:transparent}
   .pricing-table td, .pricing-table th { padding: 0.75rem 0.6rem; }
   .group-header .group-toggle { padding: 0.8rem 0.6rem; }
 }
+/* Responsive Pricing Table for Small Screens */
+@media (max-width: 520px) {
+  /* Set pricing table to take up full width of the screen */
+  .pricing-table {
+    width: 100%;
+    table-layout: auto; /* Make columns adjust naturally to content */
+    font-size: 0.85rem; /* Reduce font size for smaller screens */
+  }
+
+  /* Make the table scrollable horizontally */
+  .pricing-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Make columns display as a block for cleaner stacking */
+  .pricing-table th, 
+  .pricing-table td {
+    display: block;
+    width: 100%; /* Allow cells to stretch across the screen width */
+    text-align: left; /* Align text to the left for readability */
+    padding: 0.5rem; /* Adjust padding */
+  }
+
+  /* Hide the table headers for mobile and treat as row titles */
+  .pricing-table thead {
+    display: none;
+  }
+
+  /* Adjust table rows to have spacing for better readability */
+  .pricing-table tr {
+    display: block;
+    margin-bottom: 1rem; /* Add spacing between rows */
+  }
+
+  /* Style for table cells to look like a card */
+  .pricing-table td {
+    display: flex;
+    justify-content: space-between; /* Align key-value pairs */
+    border-bottom: 1px solid #e0e0e0; /* Add bottom border for visual separation */
+  }
+
+  .pricing-table td:last-child {
+    border-bottom: none; /* Remove the bottom border on the last cell */
+  }
+
+  /* Price column styling */
+  .pricing-table .price {
+    font-weight: bold;
+    color: var(--navy);
+  }
+}
