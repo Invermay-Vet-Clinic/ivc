@@ -597,25 +597,57 @@ main section{padding:2rem 0; background:transparent}
 }
 
 /*Apply dynamic styling to adjust font size and padding based on screen size.*/
+/* Announcement banner tweaks (keep these as they are) */
 @media (max-width: 520px) {
-  .pricing-table td,
-  .pricing-table th {
-    font-size: 0.85rem; /* Smaller text */
-    padding: 0.5rem;   /* Tighten spacing for better visibility */
+  .announcement-banner .announcement-text {
+    font-size: 1.25em; /* slightly smaller on narrow screens */
   }
-  .group-header .group-toggle { font-size: 0.95rem; }
+  .announcement-banner .announce-close {
+    font-size: 1.2em;
+    padding: 0.4rem 0.7rem;
+  }
 }
 
-/* Table spacing & column behavior */
-.pricing-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed; /* use the colgroup widths as fixed targets */
-  background: var(--card-bg);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(17,24,39,0.04);
-  font-size: 1rem;
+/* Responsive tweaks for pricing table (merged and refined) */
+@media (max-width: 520px) {
+  .pricing-table {
+    table-layout: auto; /* Allow columns to adjust to content */
+    min-width: auto;    /* Remove minimum width so table can shrink */
+    font-size: 0.85rem; /* Smaller text */
+    width: 100%;        /* Ensures table fits within the container */
+  }
+  .pricing-table th,
+  .pricing-table td {
+    display: block;     /* Stack columns vertically for better responsiveness */
+    padding: 0.4rem;    /* Adjust spacing */
+    text-align: left;   /* Left align text for easier reading */
+    width: 100%;
+  }
+  .pricing-table thead {
+    display: none; /* Remove the table header for a cleaner look */
+  }
+  .pricing-table tbody {
+    display: block;
+    margin-bottom: 1rem; /* Add spacing between sections */
+  }
+  .pricing-table tr {
+    margin-bottom: 0.75rem; /* Add spacing between rows */
+  }
+  .pricing-table td {
+    display: flex;
+    justify-content: space-between; /* Price and description on opposite ends */
+  }
+  .pricing-table .price {
+    font-weight: bold;
+  }
+}
+
+/* Adjust collapsible group headers for narrow screens */
+@media (max-width: 520px) {
+  .group-header .group-toggle {
+    font-size: 0.95rem;
+    padding: 0.8rem 0.6rem;
+  }
 }
 
 /* Make cells more readable */
