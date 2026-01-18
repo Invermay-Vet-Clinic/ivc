@@ -380,6 +380,15 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js">
+
+    document.querySelectorAll('.group-toggle').forEach(button => {
+  button.addEventListener('click', function () {
+    const parentGroup = button.closest('.pricing-group');
+    parentGroup.classList.toggle('collapsed');
+    button.setAttribute('aria-expanded', parentGroup.classList.contains('collapsed') ? 'false' : 'true');
+  });
+});
+  </script>
 </body>
 </html>
