@@ -596,6 +596,16 @@ main section{padding:2rem 0; background:transparent}
   }
 }
 
+/*Apply dynamic styling to adjust font size and padding based on screen size.*/
+@media (max-width: 520px) {
+  .pricing-table td,
+  .pricing-table th {
+    font-size: 0.85rem; /* Smaller text */
+    padding: 0.5rem;   /* Tighten spacing for better visibility */
+  }
+  .group-header .group-toggle { font-size: 0.95rem; }
+}
+
 /* Table spacing & column behavior */
 .pricing-table {
   width: 100%;
