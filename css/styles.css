@@ -480,8 +480,8 @@ main section{padding:2rem 0; background:transparent}
 
 /* Responsive breakpoints: switch to cards on small screens */
 @media (max-width: 880px) {
-  .pricing-table { display: none; }
-  .pricing-cards { display: block; }
+  .pricing-table { display: table; } /* Make the table visible */
+  .pricing-cards { display: none; } /* Hide cards if unused */
 }
 
 /* Accessibility helpers */
