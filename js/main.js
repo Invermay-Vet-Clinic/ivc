@@ -73,33 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Announcement banner helper - paste inside your DOMContentLoaded handler or call after DOM ready
-(function initAnnouncementBanner(){
-  var banner = document.querySelector('.announcement-banner');
-  if (!banner) return;
-
-  // Use a per-announcement id so you can change text/date and not reuse old dismissal
-  var id = banner.getAttribute('data-announcement-id') || 'announcement';
-  var storageKey = 'announcement-dismissed-' + id;
-
-  // Hide if previously dismissed
-  if (localStorage.getItem(storageKey) === '1') {
-    banner.style.display = 'none';
-    return;
-  }
-
-  // Close button handler
-  var btn = banner.querySelector('.announce-close');
-  if (btn) {
-    btn.addEventListener('click', function () {
-      // Hide immediately
-      banner.style.display = 'none';
-      // Persist dismissal
-      try { localStorage.setItem(storageKey, '1'); } catch (e) { /* storage may fail in private mode */ }
-    });
-  }
-})();
-
 /* Replace the existing "Find all groups" DOMContentLoaded block in js/main.js with this block.
    This keeps localStorage behavior (if user previously expanded a group) but otherwise
    defaults groups to collapsed. */
